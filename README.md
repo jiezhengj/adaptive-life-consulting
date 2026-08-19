@@ -6,7 +6,7 @@ A lot of people already use AI to talk through real-life problems: whether to ch
 
 Plain chat modes often run into familiar frustrations: ask a different AI and you get a conflicting conclusion; you know "context matters," but you have no idea which background facts actually drive the decision; after a while, the AI starts treating a single subjective remark as your permanent "personality profile"; and when you return later, you have to explain the whole backstory from scratch.
 
-**Adaptive Life Consulting** is an Agent skill designed specifically for real-life decisions. Rather than relying on rigid scoring models or vague chat prompts, it gives your AI assistant a clear, practical set of rules: **helping you think through life's choices clearly and move forward into real-world action.**
+**Adaptive Life Consulting** is deliberately old-fashioned: no programs, code, scripts, or black-box scoring models, just a pure set of Prompt rules. It has one straightforward purpose—enabling your AI assistant to act like a grounded adviser: **to help you think through life's choices clearly and move forward into real-world action.**
 
 # What It Is Not
 
