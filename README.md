@@ -1,83 +1,75 @@
 **English** · [中文](README.zh-CN.md)
 
-# Adaptive Life Consulting
+# What Problem It Solves
 
-A lot of people already use ChatGPT, DeepSeek, Doubao, and other AI assistants to talk through real-life problems: whether to change jobs, what sport to learn, whether to move, why a plan keeps falling apart, or what to do next.
+A lot of people already use AI to talk through real-life problems: whether to change jobs, what sport to pick up, whether to move, or why a personal habit keeps falling apart.
 
-But this kind of conversation has some obvious problems. Ask a different AI and you may get a different conclusion. You know “context matters,” but you may have no idea which parts of your background actually matter. After a long conversation, an AI may even start treating one tentative interpretation as “the kind of person you are.” Come back to the topic later, and you may find yourself explaining the whole situation again.
+Plain chat modes often run into familiar frustrations: ask a different AI and you get a conflicting conclusion; you know "context matters," but you have no idea which background facts actually drive the decision; after a while, the AI starts treating a single subjective remark as your permanent "personality profile"; and when you return later, you have to explain the whole backstory from scratch.
 
-This Skill is deliberately old-fashioned: no program, no scripts, no scoring model. It is simply a set of Prompt instructions for teaching an Agent how to reason through this kind of problem with you.
+**Adaptive Life Consulting** is an Agent skill designed specifically for real-life decisions. Rather than relying on rigid scoring models or vague chat prompts, it gives your AI assistant a clear, practical set of rules: **helping you think through life's choices clearly and move forward into real-world action.**
 
-## First, what it does not do
+# What It Is Not
 
-It is not psychotherapy. It does not provide mental-health diagnosis or personality analysis. It does not predict the future, tell fortunes, or practice divination.
+- **No psychotherapy or mental health diagnosis**: It does not provide clinical assessments, personality typing, or therapy.
+- **No fortune-telling or future prediction**: It does not engage in divination or pretend to know the future.
+- **Not a blindly agreeable "AI best friend"**: It will not flatter you with hollow validation or sell you a comforting, one-size-fits-all answer.
+- **Allowed to say "I don't know" and "Wrong question"**: When evidence is lacking, it will say so. When an assumption is flawed, it will point out that you might be asking the wrong question.
 
-It is also not trying to be an AI best friend whose job is to agree with you and eventually sell you a comforting “best answer.”
+# How It Works: The Four Archetypes
 
-It is allowed to say, “We don't know yet.” It is also allowed to say, “You may be asking the wrong question.”
+If you want a simple way to picture the mechanism, imagine four distinct advisers working together:
 
-## Four characters are an easy way to remember how it works
+> **Socrates asks. Sherlock Holmes investigates. Benjamin Franklin experiments. Zhang Liang decides when and how to act.**
 
-If the mechanism sounds abstract, there is a simpler way to picture it:
+- **Socrates (Questioning Premises)**: Questions the premise before rushing to answer, uncovering unverified assumptions.
+- **Sherlock Holmes (Investigating Facts)**: Focuses on objective reality (prices, rules, locations) and looks at what you have actually done before, rather than relying on abstract self-evaluation.
+- **Benjamin Franklin (Small Experiments)**: When thinking cannot resolve an unknown, designs a low-cost, reversible real-world trial.
+- **Zhang Liang (Strategic Judgment)**: Judges which uncertainties truly matter, when enough evidence has been gathered, and when to stop deliberating and start acting.
 
-> **Socrates asks.  
-> Sherlock Holmes investigates.  
-> Benjamin Franklin experiments.  
-> Zhang Liang helps decide when and how to act.**
+In short: **Ask what matters, check what can be checked, test what is unknown, and focus on judgment and action.**
 
-This is only a metaphor, not a set of personalities the Agent is supposed to imitate.
+# How the Conversation Moves Forward
 
-**Socrates** represents questioning the premise instead of rushing to answer it.
+It does not subject you to a rigid, endless questionnaire. Every time new information comes in, it re-evaluates:
 
-**Sherlock Holmes** represents looking for evidence in the real world and paying attention to what actually happened rather than relying only on self-description.
+> *What is the most critical unknown right now? What information could actually change the next recommendation?*
 
-**Benjamin Franklin** represents experimentation: when neither you nor the AI can reliably know something in advance, try a small, reversible version and learn from the result.
+Then it chooses the most effective action:
 
-**Zhang Liang**, the classical Chinese strategist and adviser, represents judgment: knowing which uncertainty matters, which constraint dominates, when enough information has been gathered, and when it is finally time to act.
+- **ASK**: Only ask what you alone can answer (critical constraints and preferences).
+- **RESEARCH**: Look up external facts (prices, policies, venues, availability).
+- **INSPECT**: Review past actual behavior and records rather than asking whether you are "a disciplined person."
+- **INFER**: Form tentative, testable explanations without treating guesses as proven facts.
+- **TEST**: When analysis reaches its limit, suggest a small real-world trial.
 
-Together, they are a useful shorthand for the Skill:
+As the conversation progresses, questions should become fewer and the direction sharper.
 
-> **Ask what matters. Check what can be checked. Test what cannot be known in advance. Then decide whether to keep thinking or act.**
+# How to Use It
 
-## How the conversation works
+This skill can be used directly in mainstream Agent assistant tools like Codex, Claude, Workbuddy, Antigravity, and similar platforms.
 
-There is no fixed questionnaire, and the Agent should not keep asking questions simply to “understand you better.”
+## Setup
 
-Every time something important is learned, it should reconsider:
+Simply add this repository (or folder) to your Agent assistant's skills library. The assistant will automatically read the rules and help you keep track of progress as you talk through decisions.
 
-> What is the most important thing we still do not know?  
-> Which answer could actually change the conclusion?
+## Starting Your First Conversation
 
-Then it chooses the most useful way to find out:
+No special prompts or commands are needed. Just start talking like you would with a trusted adviser:
 
-- **ASK** — ask something only you are likely to know;
-- **RESEARCH** — look up prices, rules, organizations, local options, and other facts in the real world;
-- **INSPECT** — look at what you have actually done before instead of asking whether you are “a disciplined person”;
-- **INFER** — form a tentative explanation from the evidence without quietly turning a guess into a fact;
-- **TEST** — when imagination cannot answer the question reliably, design a real-world trial.
+- *"I'm debating whether to sign up for climbing classes this weekend, but I worry I won't stick with it."*
+- *"I want to relocate to a new city in the next three months, but I'm not sure how to choose."*
+- *"I want to improve my spoken English, but every study plan I make falls apart. Where am I going wrong?"*
 
-So the process is not:
+# Keeping Progress and Moving to Action
 
-> ask 20 questions → calculate a score → produce an answer
+## Continuing Without Starting Over, and Without Permanent Labels
 
-It should keep updating as the conversation develops. Over time, the questions should become fewer and more important.
+It automatically helps you track long-term topics over time: tentative ideas, experiments you've tried, and interim conclusions are saved so you can pick up where you left off.
 
-## You should not have to explain everything from scratch every time
+However, past records never turn into rigid personality labels. Facts expire, preferences depend on context, and earlier ideas can always be revised.
 
-For a topic that develops over time, the important background, unresolved questions, things already tried, and current conclusion can be carried forward.
+## Knowing When to Stop Analyzing and Start Acting
 
-If you return to the same issue later, the Agent can continue from where the useful part of the discussion actually stopped instead of asking you to reconstruct everything again.
+If asking more questions will no longer change the immediate recommendation, the AI stops asking.
 
-But that history is not supposed to become a permanent personality profile.
-
-Facts can become outdated. Preferences can depend on context. Earlier interpretations can turn out to be wrong. Past information should only matter when it is genuinely relevant to the problem in front of you.
-
-## It should also know when to stop talking
-
-If the answer to the next question would not change the recommendation either way, there is probably no reason to ask it.
-
-If the answer can be checked, check it.
-
-If the answer can only be learned by actually experiencing something, go test it.
-
-The point is not to analyze you completely. It is to move the problem forward until there is enough evidence to know what the next useful step is.
+Once verifiable facts are checked and remaining uncertainties can only be answered through firsthand experience, it encourages you to move beyond deliberation and test it directly in the real world.
