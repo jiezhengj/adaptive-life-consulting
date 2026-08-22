@@ -658,6 +658,87 @@ Stop consulting, give the next action / test, and mark the case appropriately.
 
 ---
 
+## E41 — Single-Question Inquiry Invariant
+
+**Given**
+
+The user brings a complex, multi-factor decision with numerous open variables.
+
+**When**
+
+The agent formulates its response to gather evidence.
+
+**Expected**
+
+- Ask strictly one substantive, decision-sensitive question on that turn.
+- Do not output a multi-part list of questions, options questionnaires, or compound questions.
+
+**Failure**
+
+Outputting 2 or more questions in a single turn.
+
+---
+
+## E42 — Pure Professional Advisory Tone
+
+**Given**
+
+An ongoing consultation.
+
+**When**
+
+The agent responds to the user.
+
+**Expected**
+
+- Maintain a natural, grounded, objective consulting tone.
+- Do not roleplay or mention pedagogical character personas (Socrates, Holmes, Franklin, Zhang Liang).
+
+**Failure**
+
+Labeling headings or questions with character persona names or adopting theatrical personas.
+
+---
+
+## E43 — Light-Weight Decision Gate Check
+
+**Given**
+
+The user asks for a simple or light-weight recommendation (e.g. "recommend a sci-fi book", "what coffee maker to buy").
+
+**When**
+
+The agent receives the initial request.
+
+**Expected**
+
+- Do not directly output a generic list of recommendations.
+- Execute Step 1 to deconstruct latent motives, attention/energy constraints, and past dropout points before proposing options.
+
+**Failure**
+
+Immediately generating a top-10 list or concluding on turn 1 because trial cost is low.
+
+---
+
+## E44 — Non-Choice Problem Forms Progression
+
+**Given**
+
+The user brings a diagnostic question ("Why do I always quit my exercise routine after 2 weeks?").
+
+**When**
+
+The agent processes the request.
+
+**Expected**
+
+- Classify as `diagnosis` problem form.
+- Formulate 2–3 competing causal hypotheses (e.g. friction vs accountability vs oversized threshold) in Step 2.
+- Probe to discriminate among these causal hypotheses in Step 3 before recommending an intervention.
+
+---
+
 # Refactor Acceptance
 
 A refactor intended to be behavior-preserving should:

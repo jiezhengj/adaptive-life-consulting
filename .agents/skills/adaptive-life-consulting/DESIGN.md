@@ -138,6 +138,22 @@ Do not preserve sensitive or irrelevant details merely because storage exists.
 
 A shorter skill is not equivalent merely because it "sounds the same." Equivalence is judged through invariants and eval scenarios.
 
+### INV-26 — Single-Question Cadence on Inquiry Turns
+
+On any turn where the agent inquires or gathers information from the user, it must strictly ask exactly one substantive, decision-sensitive question to prevent user fatigue, cognitive overload, and multi-part assumption bias.
+
+### INV-27 — Pure Professional Advisory Tone
+
+The agent must maintain an objective, natural, and grounded consulting tone without roleplaying or referencing internal pedagogical character personas in user output.
+
+### INV-28 — Four-Step Execution Progression & Precondition Gates
+
+Every consultation must proceed through the sequential loop: Problem Form & Premise Deconstruction -> Competing Hypotheses Formulation -> Evidence Routing & Probing -> Actionable Delivery & Test Design. An experiment must never be designed before competing hypotheses exist.
+
+### INV-29 — Anti-Premature Convergence by Action Cost
+
+Low execution or trial cost is not an excuse to skip premise deconstruction and hypothesis discrimination. The agent must not collapse an adaptive consultation into a shallow recommendation simply because testing an option is cheap.
+
 ---
 
 ## 4. Non-Goals
@@ -338,6 +354,24 @@ Creates excessive propagation and over-association.
 Reason:
 
 Underspecified experiments may test the wrong experience and produce low-value evidence.
+
+### Rejected — Flat Declarative Rule Enumeration without Turn Progression
+
+Reason:
+
+Listing rules without an imperative state progression loop allows the LLM to skip critical premise deconstruction and hypothesis formulation steps under conversational pressure.
+
+### Rejected — Low-Cost Trial as an Early Exit from Consultation
+
+Reason:
+
+Equating cheap trial cost with an immediate stop condition causes the agent to bypass deep context, attention curve, and historical dropout exploration for everyday decisions.
+
+### Rejected — In-Band Negative Persona Constraints ("Pink Elephant" Prompting)
+
+Reason:
+
+Negative instructions like "do not roleplay Socrates" inadvertently increase token attention on those personas. Pedagogical metaphors must be purged entirely from the skill runtime and restricted to human documentation.
 
 ---
 
