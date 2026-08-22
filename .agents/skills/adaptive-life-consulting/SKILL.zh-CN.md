@@ -1,15 +1,14 @@
 ---
 name: adaptive-life-consulting
-description: >
-  一套纯 Prompt 的自适应生活咨询协议，用于处理具有个人情境、现实约束和不确定性的人生决策与日常生活问题。它不会执行固定问卷，而会动态判断下一步最值得做的是询问用户、调查外部现实、检查过去行为、形成暂时推断，还是进入现实测试。可以把它记成一个比喻：苏格拉底负责问，福尔摩斯负责查，
-  富兰克林负责试，张良负责判断什么时候、以什么方式行动。它不提供心理咨询、人格分析、算命占卜或未来预测。
+description: >-
+  一套纯 Prompt 的自适应生活咨询协议，用于处理具有个人情境、现实约束和不确定性的人生决策与日常生活问题（如职业选择、运动/活动挑选、习惯养成、方案抉择、困境诊断等）。它不会执行固定问卷，而会动态判断下一步最值得做的是询问用户、调查外部现实、检查过去行为、形成暂时推断，还是设计现实小实验。它不提供心理咨询、人格分析、算命占卜或未来预测。
 ---
 
 # 自适应生活咨询
 
 ## 文档导航
 
-项目入口见 [`README.zh-CN.md`](README.zh-CN.md)。设计理由与不变量见 [`DESIGN.md`](DESIGN.md)；行为回归标准见 [`EVALS.md`](EVALS.md)。复杂运行规则按本文件指引从 [`reference/`](reference/) 读取。重构前冻结基线为 [`archive/SKILL-v3.md`](archive/SKILL-v3.md)。
+项目入口见 [`README.zh-CN.md`](../../../README.zh-CN.md)。设计理由与不变量见 [`DESIGN.md`](../../../DESIGN.md)；行为回归标准见 [`EVALS.md`](../../../EVALS.md)。复杂运行规则按本文件指引从 [`references/`](references/) 读取。
 
 
 ## 1. 目的
@@ -24,7 +23,7 @@ description: >
 
 Agent 的任务是管理不确定性、证据、Case 状态和行动，而不是最大化访谈深度。
 
-设计 rationale 和 non-goals 见 `DESIGN.md`。
+设计 rationale 和 non-goals 见 `../../../DESIGN.md`。
 
 ---
 
@@ -105,7 +104,7 @@ Agent 的任务是管理不确定性、证据、Case 状态和行动，而不是
 假设不是事实。
 建议不是证据。
 
-规范 schema 见 `reference/schemas.md`。
+规范 schema 见 `references/schemas.md`。
 
 ---
 
@@ -121,7 +120,7 @@ Chat session 只是交互通道，不是 Case 生命周期的权威载体。
 
 而不是把不断膨胀的完整 transcript 永远作为主要工作记忆。
 
-工作区发现、Case 生命周期、恢复、关闭、版本化和恢复边界见 `reference/persistence.md`。
+工作区发现、Case 生命周期、恢复、关闭、版本化和恢复边界见 `references/persistence.md`。
 
 ---
 
@@ -163,11 +162,11 @@ Chat session 只是交互通道，不是 Case 生命周期的权威载体。
 10. 判断继续分析是否仍可能改变下一步行动。
 11. 如果不能，停止调查并行动。
 
-证据路由详见 `reference/evidence-and-research.md`。
+证据路由详见 `references/evidence-and-research.md`。
 
-访谈与实验详见 `reference/interviewing-and-experiments.md`。
+访谈与实验详见 `references/interviewing-and-experiments.md`。
 
-跨 Case 真值维护详见 `reference/truth-maintenance.md`。
+跨 Case 真值维护详见 `references/truth-maintenance.md`。
 
 ---
 
@@ -337,7 +336,7 @@ Checkpoint 内部确认：
 
 决策相关证据应保留 provenance 和 freshness。
 
-见 `reference/evidence-and-research.md`。
+见 `references/evidence-and-research.md`。
 
 ---
 
@@ -457,7 +456,7 @@ Checkpoint 内部确认：
 - 新鲜感是否需要通过重复测试排除；
 - 什么结果会更新 Case。
 
-见 `reference/interviewing-and-experiments.md`。
+见 `references/interviewing-and-experiments.md`。
 
 ---
 
@@ -486,7 +485,7 @@ Checkpoint 内部确认：
 
 如果跨 Case 的重大变化使旧的重要结论失效，应在合适时向用户说明。
 
-详见 `reference/truth-maintenance.md`。
+详见 `references/truth-maintenance.md`。
 
 ---
 
@@ -622,13 +621,13 @@ Reopen 时：
 - 只更新受影响部分；
 - 实质变化的结论要版本化。
 
-详见 `reference/persistence.md`。
+详见 `references/persistence.md`。
 
 ---
 
 ## 29. 什么时候读取 Supporting References
 
-以下情况读取 `reference/persistence.md`：
+以下情况读取 `references/persistence.md`：
 
 - 初始化或发现 workspace；
 - 判断 new-case / resume / reopen；
@@ -636,7 +635,7 @@ Reopen 时：
 - 版本化 conclusion；
 - split、link 或 merge Case。
 
-以下情况读取 `reference/truth-maintenance.md`：
+以下情况读取 `references/truth-maintenance.md`：
 
 - 创建或更新跨 Case Memory；
 - 新旧证据冲突；
@@ -644,7 +643,7 @@ Reopen 时：
 - 决定性 dependency 改变；
 - 历史 Case 可能需要 reopen。
 
-以下情况读取 `reference/evidence-and-research.md`：
+以下情况读取 `references/evidence-and-research.md`：
 
 - 选择证据来源；
 - 外部调查；
@@ -652,7 +651,7 @@ Reopen 时：
 - 判断时效和 provenance；
 - 处理高风险事实。
 
-以下情况读取 `reference/interviewing-and-experiments.md`：
+以下情况读取 `references/interviewing-and-experiments.md`：
 
 - 规划较长访谈；
 - 判断是否应该再问一题；
@@ -660,7 +659,7 @@ Reopen 时：
 - 设计现实实验；
 - 判断是否应该停止。
 
-创建或修改持久化文件和记录时读取 `reference/schemas.md`。
+创建或修改持久化文件和记录时读取 `references/schemas.md`。
 
 ---
 

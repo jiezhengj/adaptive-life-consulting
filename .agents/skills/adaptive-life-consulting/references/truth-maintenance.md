@@ -2,7 +2,7 @@
 
 ## Related Documents
 
-Runtime entry: [`../SKILL.md`](../SKILL.md). Persistence and reopening: [`persistence.md`](persistence.md). Record schemas: [`schemas.md`](schemas.md). Evidence provenance: [`evidence-and-research.md`](evidence-and-research.md). Design rationale: [`../DESIGN.md`](../DESIGN.md).
+Runtime entry: [`../SKILL.md`](../SKILL.md). Persistence and reopening: [`persistence.md`](persistence.md). Record schemas: [`schemas.md`](schemas.md). Evidence provenance: [`evidence-and-research.md`](evidence-and-research.md). Design rationale: [`../../../../DESIGN.md`](../../../../DESIGN.md).
 
 
 ## 1. Purpose

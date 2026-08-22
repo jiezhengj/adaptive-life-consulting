@@ -50,7 +50,9 @@ This skill can be used directly in mainstream Agent assistant tools like Codex, 
 
 ## Setup
 
-Simply add this repository (or folder) to your Agent assistant's skills library. The assistant will automatically read the rules and help you keep track of progress as you talk through decisions.
+The skill is packaged under `.agents/skills/adaptive-life-consulting/`. You can:
+- **Use as a project-level skill**: Open this repository in your Agent assistant (Antigravity, Claude Code, Codex, etc.). The assistant will automatically discover and load the skill.
+- **Install globally**: Symlink or copy `.agents/skills/adaptive-life-consulting` to your global skills directory (e.g., `~/.agents/skills/` and `~/.gemini/config/skills/`).
 
 ## Starting Your First Conversation
 

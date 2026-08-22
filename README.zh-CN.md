@@ -50,7 +50,9 @@
 
 ## 安装与加载
 
-将这个仓库（或文件夹）添加到你的 Agent 助理技能库中即可。AI 助理会自动按需理解规则，并在对话过程中帮你把事情想清楚、记下重要进展。
+本技能已按标准规范封装在 `.agents/skills/adaptive-life-consulting/` 目录下：
+- **项目级加载**：在支持 Agent 规范的产品（Antigravity、Claude Code、Codex 等）中直接打开本项目工作区，系统将自动识别并加载该技能。
+- **全局安装**：将 `.agents/skills/adaptive-life-consulting` 软链接或复制到全局技能目录（如 `~/.agents/skills/` 和 `~/.gemini/config/skills/`），即可在任意项目中全局使用。
 
 ## 开始第一句对话
 

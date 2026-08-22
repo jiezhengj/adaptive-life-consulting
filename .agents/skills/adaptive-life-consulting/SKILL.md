@@ -1,14 +1,14 @@
 ---
 name: adaptive-life-consulting
-description: >
-  A prompt-only adaptive consulting protocol for working through uncertain,personally contextual life decisions and everyday-life problems. It dynamically decides whether the next useful step is to ask the user, research external reality, inspect past behavior, form a tentative inference, or test something in the real world. As a mnemonic: Socrates asks, Sherlock Holmes investigates, Benjamin Franklin experiments, and Zhang Liang helps judge when and how to act. The skill does not provide psychotherapy, personality analysis, fortune-telling, or future prediction.
+description: >-
+  A prompt-only adaptive consulting protocol for working through uncertain, personally contextual life decisions, dilemmas, habit formation, career choices, activity selection, and everyday problems. Use when the user is deliberating over choices, struggling to pick or stick with something, evaluating options, or trying to diagnose why a personal plan or habit fails. Dynamically decides whether the next useful step is to ask the user, research external reality, inspect past behavior, form a tentative inference, or design a real-world test. Does not provide psychotherapy, personality analysis, fortune-telling, or future prediction.
 ---
 
 # Adaptive Life Consulting
 
 ## Document Map
 
-Start with [`README.md`](README.md). Design rationale and invariants live in [`DESIGN.md`](DESIGN.md); regression behavior is defined in [`EVALS.md`](EVALS.md). Detailed operational rules are loaded from [`reference/`](reference/) as directed by this file. The frozen pre-refactor baseline is [`archive/SKILL-v3.md`](archive/SKILL-v3.md).
+Start with [`README.md`](../../../README.md). Design rationale and invariants live in [`DESIGN.md`](../../../DESIGN.md); regression behavior is defined in [`EVALS.md`](../../../EVALS.md). Detailed operational rules are loaded from [`references/`](references/) as directed by this file.
 
 
 ## 1. Purpose
@@ -23,7 +23,7 @@ The governing question is:
 
 The agent should manage uncertainty, evidence, case state, and action—not maximize interview depth.
 
-For design rationale and non-goals, read `DESIGN.md`.
+For design rationale and non-goals, read `../../../DESIGN.md`.
 
 ---
 
@@ -102,7 +102,7 @@ An inference is not a user trait.
 A hypothesis is not a fact.
 A recommendation is not evidence.
 
-Normative schemas are in `reference/schemas.md`.
+Normative schemas are in `references/schemas.md`.
 
 ---
 
@@ -118,7 +118,7 @@ Prefer:
 
 rather than carrying an ever-growing raw transcript as active working memory.
 
-For workspace discovery, lifecycle, resumption, closure, versioning, and recovery, read `reference/persistence.md`.
+For workspace discovery, lifecycle, resumption, closure, versioning, and recovery, read `references/persistence.md`.
 
 ---
 
@@ -160,11 +160,11 @@ Repeat only while further information remains valuable:
 10. Ask whether further analysis can still change the next action.
 11. If not, stop investigating and act.
 
-Detailed evidence routing rules are in `reference/evidence-and-research.md`.
+Detailed evidence routing rules are in `references/evidence-and-research.md`.
 
-Detailed interview and experiment rules are in `reference/interviewing-and-experiments.md`.
+Detailed interview and experiment rules are in `references/interviewing-and-experiments.md`.
 
-Detailed cross-case truth-maintenance rules are in `reference/truth-maintenance.md`.
+Detailed cross-case truth-maintenance rules are in `references/truth-maintenance.md`.
 
 ---
 
@@ -332,7 +332,7 @@ Do not present weak aggregators, generic estimates, stale pages, or isolated ane
 
 Preserve provenance and freshness for decision-relevant evidence.
 
-See `reference/evidence-and-research.md`.
+See `references/evidence-and-research.md`.
 
 ---
 
@@ -454,7 +454,7 @@ A useful experiment specifies:
 - whether repetition is needed after novelty fades;
 - what result would update the case.
 
-See `reference/interviewing-and-experiments.md`.
+See `references/interviewing-and-experiments.md`.
 
 ---
 
@@ -483,7 +483,7 @@ Propagate only material changes to cases that actually depended on the changed r
 
 If a material cross-case change invalidates an important prior conclusion, inform the user when appropriate.
 
-See `reference/truth-maintenance.md`.
+See `references/truth-maintenance.md`.
 
 ---
 
@@ -616,13 +616,13 @@ When reopening:
 - update only affected parts;
 - version materially changed conclusions.
 
-See `reference/persistence.md`.
+See `references/persistence.md`.
 
 ---
 
 ## 29. When to Read Supporting References
 
-Read `reference/persistence.md` when:
+Read `references/persistence.md` when:
 
 - initializing or discovering a workspace;
 - deciding new-case vs resume/reopen;
@@ -630,7 +630,7 @@ Read `reference/persistence.md` when:
 - versioning conclusions;
 - splitting, linking, or merging cases.
 
-Read `reference/truth-maintenance.md` when:
+Read `references/truth-maintenance.md` when:
 
 - cross-case memory is created or updated;
 - old and new evidence conflict;
@@ -638,7 +638,7 @@ Read `reference/truth-maintenance.md` when:
 - a material dependency changes;
 - a historical case may need reopening.
 
-Read `reference/evidence-and-research.md` when:
+Read `references/evidence-and-research.md` when:
 
 - selecting evidence source;
 - performing external research;
@@ -646,7 +646,7 @@ Read `reference/evidence-and-research.md` when:
 - deciding freshness or provenance;
 - handling high-stakes factual claims.
 
-Read `reference/interviewing-and-experiments.md` when:
+Read `references/interviewing-and-experiments.md` when:
 
 - planning a longer interview;
 - deciding whether to ask another question;
@@ -654,7 +654,7 @@ Read `reference/interviewing-and-experiments.md` when:
 - designing a real-world test;
 - determining whether to stop.
 
-Read `reference/schemas.md` when creating or modifying persistent files or records.
+Read `references/schemas.md` when creating or modifying persistent files or records.
 
 ---
 

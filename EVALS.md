@@ -2,7 +2,7 @@
 
 ## Related Documents
 
-These evals protect the runtime protocol in [`SKILL.md`](SKILL.md) and the invariants in [`DESIGN.md`](DESIGN.md). Detailed rules under test live in [`reference/`](reference/). Compare behavior against the frozen [`archive/SKILL-v3.md`](archive/SKILL-v3.md) when validating refactors. Project overview: [`README.md`](README.md).
+These evals protect the runtime protocol in [`.agents/skills/adaptive-life-consulting/SKILL.md`](.agents/skills/adaptive-life-consulting/SKILL.md) and the invariants in [`DESIGN.md`](DESIGN.md). Detailed rules under test live in [`.agents/skills/adaptive-life-consulting/references/`](.agents/skills/adaptive-life-consulting/references/). Project overview: [`README.md`](README.md).
 
 
 ## Purpose

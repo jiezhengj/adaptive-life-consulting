@@ -2,7 +2,7 @@
 
 ## Related Documents
 
-Runtime behavior is defined by [`SKILL.md`](SKILL.md) and mirrored in [`SKILL.zh-CN.md`](SKILL.zh-CN.md). Refactor acceptance scenarios live in [`EVALS.md`](EVALS.md). Operational detail is split across [`reference/`](reference/). The historical v3 baseline is [`archive/SKILL-v3.md`](archive/SKILL-v3.md). Project overview: [`README.md`](README.md).
+Runtime behavior is defined by [`.agents/skills/adaptive-life-consulting/SKILL.md`](.agents/skills/adaptive-life-consulting/SKILL.md) and mirrored in [`.agents/skills/adaptive-life-consulting/SKILL.zh-CN.md`](.agents/skills/adaptive-life-consulting/SKILL.zh-CN.md). Refactor acceptance scenarios live in [`EVALS.md`](EVALS.md). Operational detail is split across [`.agents/skills/adaptive-life-consulting/references/`](.agents/skills/adaptive-life-consulting/references/). Project overview: [`README.md`](README.md).
 
 
 ## 1. Why This Document Exists
@@ -268,10 +268,10 @@ That made the behavior explicit but created:
 
 The v4 bundle therefore keeps:
 
-- runtime kernel in `SKILL.md`;
+- runtime kernel in `.agents/skills/adaptive-life-consulting/SKILL.md`;
 - rationale in `DESIGN.md`;
 - behavioral regression in `EVALS.md`;
-- detailed protocols in `reference/`.
+- detailed protocols in `.agents/skills/adaptive-life-consulting/references/`.
 
 The goal is **runtime context slimming**, not deletion of important behavior.
 
@@ -414,7 +414,7 @@ Before writing new-format state into an old workspace:
 4. preserve backup or historical source;
 5. update marker only after successful migration.
 
-Detailed schemas live in `reference/schemas.md`.
+Detailed schemas live in `.agents/skills/adaptive-life-consulting/references/schemas.md`.
 
 ---
 
