@@ -1,2 +1,17 @@
+# 操作系统与编辑器临时文件
 .DS_Store
 Thumbs.db
+*.swp
+*.tmp
+
+# 默认忽略根目录下的一切文件与文件夹（防止个人咨询数据、记录被误提交）
+/*
+
+# 白名单：仅允许跟踪核心技能源码与仓库公开元文件
+!.gitignore
+!.gitattributes
+!.adaptive-life-consulting.yaml
+!README.md
+!README.zh-CN.md
+!.agents/
+
