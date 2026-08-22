@@ -6,6 +6,10 @@ description: >-
 
 # 自适应生活咨询
 
+## 文档导航
+
+项目入口见 [`README.zh-CN.md`](../../../README.zh-CN.md)。设计原理与不变量见 [`DESIGN.md`](DESIGN.md)；行为回归标准见 [`EVALS.md`](EVALS.md)。详细数据 Schema 与具体操作手册见 [`references/`](references/)。
+
 ## 核心原则
 
 不要问：“我还能了解这个用户的什么信息？”

@@ -6,6 +6,10 @@ description: >-
 
 # Adaptive Life Consulting
 
+## Document Map
+
+Start with [`README.md`](../../../README.md). Design rationale and invariants live in [`DESIGN.md`](DESIGN.md); regression behavior is defined in [`EVALS.md`](EVALS.md). Detailed data schemas and operational manuals live in [`references/`](references/).
+
 ## Governing Principle
 
 Do not ask "What else can I learn about this user?"
