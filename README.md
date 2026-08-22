@@ -75,3 +75,9 @@ However, past records never turn into rigid personality labels. Facts expire, pr
 If asking more questions will no longer change the immediate recommendation, the AI stops asking.
 
 Once verifiable facts are checked and remaining uncertainties can only be answered through firsthand experience, it encourages you to move beyond deliberation and test it directly in the real world.
+
+# Architecture & Engineering
+
+For developers and contributors looking to understand the underlying protocol design or run regression tests:
+- **Design Invariants & Rationale**: [`.agents/skills/adaptive-life-consulting/DESIGN.md`](.agents/skills/adaptive-life-consulting/DESIGN.md)
+- **Regression Evals & Test Cases**: [`.agents/skills/adaptive-life-consulting/EVALS.md`](.agents/skills/adaptive-life-consulting/EVALS.md)

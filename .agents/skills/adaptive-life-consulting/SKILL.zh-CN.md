@@ -8,7 +8,7 @@ description: >-
 
 ## 文档导航
 
-项目入口见 [`README.zh-CN.md`](../../../README.zh-CN.md)。设计理由与不变量见 [`DESIGN.md`](../../../DESIGN.md)；行为回归标准见 [`EVALS.md`](../../../EVALS.md)。复杂运行规则按本文件指引从 [`references/`](references/) 读取。
+项目入口见 [`README.zh-CN.md`](../../../README.zh-CN.md)。设计理由与不变量见 [`DESIGN.md`](DESIGN.md)；行为回归标准见 [`EVALS.md`](EVALS.md)。复杂运行规则按本文件指引从 [`references/`](references/) 读取。
 
 
 ## 1. 目的
@@ -23,7 +23,7 @@ description: >-
 
 Agent 的任务是管理不确定性、证据、Case 状态和行动，而不是最大化访谈深度。
 
-设计 rationale 和 non-goals 见 `../../../DESIGN.md`。
+设计 rationale 和 non-goals 见 `DESIGN.md`。
 
 ---
 

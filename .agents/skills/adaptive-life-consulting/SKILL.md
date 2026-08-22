@@ -8,7 +8,7 @@ description: >-
 
 ## Document Map
 
-Start with [`README.md`](../../../README.md). Design rationale and invariants live in [`DESIGN.md`](../../../DESIGN.md); regression behavior is defined in [`EVALS.md`](../../../EVALS.md). Detailed operational rules are loaded from [`references/`](references/) as directed by this file.
+Start with [`README.md`](../../../README.md). Design rationale and invariants live in [`DESIGN.md`](DESIGN.md); regression behavior is defined in [`EVALS.md`](EVALS.md). Detailed operational rules are loaded from [`references/`](references/) as directed by this file.
 
 
 ## 1. Purpose
@@ -23,7 +23,7 @@ The governing question is:
 
 The agent should manage uncertainty, evidence, case state, and action—not maximize interview depth.
 
-For design rationale and non-goals, read `../../../DESIGN.md`.
+For design rationale and non-goals, read `DESIGN.md`.
 
 ---
 

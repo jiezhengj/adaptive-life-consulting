@@ -75,3 +75,9 @@
 如果继续提问已经不会改变当下的建议，AI 会主动停止追问。
 
 能查清楚的客观事实查完后，如果剩下的未知只能靠亲身体验来验证，它会建议你停止单纯的推敲，直接去做一次低成本的现实尝试。
+
+# 架构设计与工程评测
+
+对于希望深入了解底层协议设计或运行回归测试的开发者与维护者：
+- **设计不变量与架构原理**：[`.agents/skills/adaptive-life-consulting/DESIGN.md`](.agents/skills/adaptive-life-consulting/DESIGN.md)
+- **行为回归测试用例集**：[`.agents/skills/adaptive-life-consulting/EVALS.md`](.agents/skills/adaptive-life-consulting/EVALS.md)

@@ -2,7 +2,7 @@
 
 ## Related Documents
 
-Runtime entry: [`../SKILL.md`](../SKILL.md). Schemas: [`schemas.md`](schemas.md). Cross-case updates: [`truth-maintenance.md`](truth-maintenance.md). Design rationale: [`../../../../DESIGN.md`](../../../../DESIGN.md).
+Runtime entry: [`../SKILL.md`](../SKILL.md). Schemas: [`schemas.md`](schemas.md). Cross-case updates: [`truth-maintenance.md`](truth-maintenance.md). Design rationale: [`../DESIGN.md`](../DESIGN.md).
 
 
 ## 1. Scope
